@@ -27,6 +27,7 @@ function DataFetching() {
 			<input type="text" value={id} onChange={e => setId(e.target.value)} />
 			<button type="button" onClick={handleClick}>Fetch Post</button>
 			<div>{post.title}</div>
+			
 			{/* <ul>
 				{posts.map(post => (
           <li key={post.id}>{post.title}</li>
