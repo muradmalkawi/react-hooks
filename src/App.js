@@ -23,6 +23,8 @@ import ComponentB from './components/ComponentB'
 import ComponentC from './components/ComponentC'
 import DataFetchingOne from './components/DataFetchingOne'
 import DataFetchingTwo from './components/DataFetchingTwo'
+import ComponentD from './components/ComponentD'
+import ComponentF from './components/ComponentF'
 
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
@@ -53,13 +55,15 @@ function App() {
 			<div className="App">
 				{/* <CounterOne /> */}
 				{/* <CounterTwo /> */}
-				<CounterThree />
+				{/* <CounterThree /> */}
 				{/* {count} */}
-				{/* <ComponentA /> */}
+				{/* <ComponentA />
+				<ComponentD />
+				<ComponentF /> */}
 				{/* <ComponentB /> */}
 				{/* <ComponentC /> */}
 				{/* <DataFetchingOne /> */}
-				{/* <DataFetchingTwo /> */}
+				<DataFetchingTwo />
 				</div>
 		</CountContext.Provider>
 	)

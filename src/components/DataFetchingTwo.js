@@ -1,6 +1,8 @@
 import React, { useReducer, useEffect } from 'react'
 import axios from 'axios'
 
+
+// declare 3 variables as properties of single object
 const initialState = {
 	loading: true,
 	error: '',
@@ -41,6 +43,7 @@ function DataFetchingTwo() {
 	}, [])
 	return (
 		<div>
+			{/* append state as they part of state */}
 			{state.loading ? 'Loading' : state.post.title}
 			{state.error ? state.error : null}
 		</div>
