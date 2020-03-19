@@ -15,44 +15,60 @@ import IntervalHookCounter from './components/IntervalHookCounter'
 import DataFetching from './components/DataFetching'
 //import ComponentC from './components/ComponentC'
 
-import CounterOne from './components/CounterOne'
-import CounterTwo from './components/CounterTwo'
-import CounterThree from './components/CounterThree'
-import ComponentA from './components/ComponentA'
-import ComponentB from './components/ComponentB'
-import ComponentC from './components/ComponentC'
-import DataFetchingOne from './components/DataFetchingOne'
-import DataFetchingTwo from './components/DataFetchingTwo'
-import ComponentD from './components/ComponentD'
-import ComponentF from './components/ComponentF'
-
-export const UserContext = React.createContext()
-export const ChannelContext = React.createContext()
+// import CounterOne from './components/CounterOne'
+// import CounterTwo from './components/CounterTwo'
+// import CounterThree from './components/CounterThree'
+// import ComponentA from './components/ComponentA'
+// import ComponentB from './components/ComponentB'
+// import ComponentC from './components/ComponentC'
+// import DataFetchingOne from './components/DataFetchingOne'
+// import DataFetchingTwo from './components/DataFetchingTwo'
+// import ComponentD from './components/ComponentD'
+//import ComponentF from './components/ComponentF'
 
 
-const initialState = 0
-const reducer = (state, action) => {
-	switch (action) {
-		case 'increment':
-			return state + 1
-		case 'decrement':
-			return state - 1
-		case 'reset':
-			return initialState
-		default:
-			return state
-	}
-}
-
-export const CountContext = React.createContext()
+import ParentComponent from './components/ParentComponent'
 
 function App() {
-	const [count, dispatch] = useReducer(reducer, initialState)
 	return (
-		<CountContext.Provider
-			value={{ countState: count, countDispatch: dispatch }}
-		>
-			<div className="App">
+		<div className="App">
+			<ParentComponent />
+		</div>
+	)
+}
+
+// export default App
+
+
+
+
+// export const UserContext = React.createContext()
+// export const ChannelContext = React.createContext()
+
+
+// const initialState = 0
+// const reducer = (state, action) => {
+// 	switch (action) {
+// 		case 'increment':
+// 			return state + 1
+// 		case 'decrement':
+// 			return state - 1
+// 		case 'reset':
+// 			return initialState
+// 		default:
+// 			return state
+// 	}
+// }
+
+// export const CountContext = React.createContext()
+
+// function App() {
+// 	const [count, dispatch] = useReducer(reducer, initialState)
+// 	return (
+// 		<CountContext.Provider
+// 			value={{ countState: count, countDispatch: dispatch }}
+// 		>
+// 			<div className="App">
 				{/* <CounterOne /> */}
 				{/* <CounterTwo /> */}
 				{/* <CounterThree /> */}
@@ -63,11 +79,11 @@ function App() {
 				{/* <ComponentB /> */}
 				{/* <ComponentC /> */}
 				{/* <DataFetchingOne /> */}
-				<DataFetchingTwo />
-				</div>
-		</CountContext.Provider>
-	)
-}
+// 				<DataFetchingTwo />
+// 				</div>
+// 		</CountContext.Provider>
+// 	)
+// }
 
 
 // class App extends Component {
