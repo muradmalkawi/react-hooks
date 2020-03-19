@@ -28,11 +28,17 @@ import DataFetching from './components/DataFetching'
 
 
 import ParentComponent from './components/ParentComponent'
+import Counter from './components/Counter'
+import HookTimer from './components/HookTimer'
+
 
 function App() {
 	return (
 		<div className="App">
-			<ParentComponent />
+			<HookTimer />
+			{/* <classTimer /> */}
+			{/* <Counter /> */}
+			{/* <ParentComponent /> */}
 		</div>
 	)
 }
