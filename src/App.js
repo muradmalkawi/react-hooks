@@ -18,7 +18,7 @@ import DataFetching from './components/DataFetching'
 
 // import CounterOne from './components/CounterOne'
 // import CounterTwo from './components/CounterTwo'
-// import CounterThree from './components/CounterThree'
+import CounterThree from './components/CounterThree'
 // import ComponentA from './components/ComponentA'
 // import ComponentB from './components/ComponentB'
 // import ComponentC from './components/ComponentC'
@@ -50,13 +50,7 @@ function App() {
 			{/* <ClassCounterTwo /> */}
 
 			{/* <HookCounterThree /> */}
-			<HookCounterFour />
-
-			{/* <UserForm /> */}
-			{/* <CounterOne />
-			<CounterTwo /> */}
-			{/* <DocTitleOne />
-			<DocTitleTwo /> */}
+			{/* <HookCounterFour /> */}
 
 
 
@@ -68,7 +62,24 @@ function App() {
 			{/* <MouseContainer /> */}
 			{/* <IntervalClassCounter /> */}
 			{/* <IntervalHookCounter /> */}
+			{/* <DataFetching /> */}
 
+
+			{/* useContext Hook  */}
+			{/* <ComponentC /> */}
+
+
+
+			<CounterOne />
+			<CounterThree />
+
+
+
+			{/* <UserForm /> */}
+			{/* <CounterOne />
+			<CounterTwo /> */}
+			{/* <DocTitleOne />
+			<DocTitleTwo /> */}
 
 			{/* <HookTimer /> */}
 			{/* <classTimer /> */}

@@ -4,8 +4,8 @@ function IntervalHookCounter() {
   const [count, setCount] = useState(0)
 
   const tick = () => {
-    // setCount(count + 1)
-    setCount(prevCount => prevCount + 1)
+    setCount(count + 1)
+    // setCount(prevCount => prevCount + 1)
 
   }
  
@@ -14,7 +14,7 @@ function IntervalHookCounter() {
     return () => {
       clearInterval(interval)
     }
-	}, [])
+	}, [count])
 
   return (
     <div>
