@@ -4,6 +4,7 @@ import ClassCounter from './components/ClassCounter'
 import HookCounter from './components/HookCounter'
 import HookCounterTwo from './components/HookCounterTwo'
 import HookCounterThree from './components/HookCounterThree'
+import ClassCounterOne from './components/ClassCounterOne'
 import ClassCounterTwo from './components/ClassCounterTwo'
 import HookCounterFour from './components/HookCounterFour'
 import HookCounterOne from './components/HookCounterOne'
@@ -30,12 +31,46 @@ import DataFetching from './components/DataFetching'
 import ParentComponent from './components/ParentComponent'
 import Counter from './components/Counter'
 import HookTimer from './components/HookTimer'
+import DocTitleOne from './components/DocTitleOne'
+import DocTitleTwo from './components/DocTitleTwo'
+import CounterOne from './components/CounterOne'
+import CounterTwo from './components/CounterTwo'
+import UserForm from './components/UserForm'
 
 
 function App() {
 	return (
 		<div className="App">
-			<HookTimer />
+
+			{/* useState Hook */}
+			{/* <HookCounter /> */}
+			{/* <ClassCounter /> */}
+
+			{/* <HookCounterTwo /> */}
+			{/* <ClassCounterTwo /> */}
+
+			{/* <HookCounterThree /> */}
+			<HookCounterFour />
+
+			{/* <UserForm /> */}
+			{/* <CounterOne />
+			<CounterTwo /> */}
+			{/* <DocTitleOne />
+			<DocTitleTwo /> */}
+
+
+
+			{/* useEffect Hook */}
+			{/* <ClassCounterOne /> */}
+			{/* <HookCounterOne /> */}
+			{/* <ClassMouse /> */}
+			{/* <HookMouse /> */}
+			{/* <MouseContainer /> */}
+			{/* <IntervalClassCounter /> */}
+			{/* <IntervalHookCounter /> */}
+
+
+			{/* <HookTimer /> */}
 			{/* <classTimer /> */}
 			{/* <Counter /> */}
 			{/* <ParentComponent /> */}
