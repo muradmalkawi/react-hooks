@@ -15,6 +15,7 @@ function ParentComponent() {
 		setSalary(salary + 1000)
 	}, [salary])
 
+	
 	return (
 		<div>
 			<Title />

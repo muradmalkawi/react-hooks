@@ -21,6 +21,7 @@ function DataFetchingOne() {
         setError('Something went wrong!')
       })
   }, [])
+  // empty dependency array to ensure it is called once
 
   return (
     <div>

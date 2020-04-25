@@ -22,7 +22,7 @@
 
 
 
-// for useeducer Hooks
+// for useReducer Hooks
 
 import React, { useReducer } from 'react'
 
@@ -41,6 +41,7 @@ const reducer = (state, action) => {
 }
 
 function CounterOne() {
+	// dispatch allows to execute code and dispatch appropriate function
 	const [count, dispatch] = useReducer(reducer, initialState)
 
 	return (

@@ -19,11 +19,11 @@ import DataFetching from './components/DataFetching'
 // import CounterOne from './components/CounterOne'
 // import CounterTwo from './components/CounterTwo'
 import CounterThree from './components/CounterThree'
-// import ComponentA from './components/ComponentA'
-// import ComponentB from './components/ComponentB'
-// import ComponentC from './components/ComponentC'
+import ComponentA from './components/ComponentA'
+import ComponentB from './components/ComponentB'
+import ComponentC from './components/ComponentC'
 // import DataFetchingOne from './components/DataFetchingOne'
-// import DataFetchingTwo from './components/DataFetchingTwo'
+import DataFetchingTwo from './components/DataFetchingTwo'
 // import ComponentD from './components/ComponentD'
 //import ComponentF from './components/ComponentF'
 
@@ -36,11 +36,22 @@ import DocTitleTwo from './components/DocTitleTwo'
 import CounterOne from './components/CounterOne'
 import CounterTwo from './components/CounterTwo'
 import UserForm from './components/UserForm'
+import DataFetchingOne from './components/DataFetchingOne'
 
 
-function App() {
+export const UserContext = React.createContext()
+export const ChannelContext = React.createContext()
+
+export const CountContext = React.createContext()
+
+
+
+
+	function App() {
 	return (
-		<div className="App">
+		<div className="App"> 
+
+
 
 			{/* useState Hook */}
 			{/* <HookCounter /> */}
@@ -64,15 +75,28 @@ function App() {
 			{/* <IntervalHookCounter /> */}
 			{/* <DataFetching /> */}
 
-
 			{/* useContext Hook  */}
 			{/* <ComponentC /> */}
 
+ 			{/* <UserContext.Provider value={'Peter Osoo'}>
+         		<ChannelContext.Provider value={'Rateng Inc'}>
+ 					<ComponentC />
+ 				</ChannelContext.Provider>
+ 			</UserContext.Provider>			 */}
 
 
-			<CounterOne />
-			<CounterThree />
 
+			{/* useReducer Hook  */}
+			{/* <CounterOne /> */}
+			{/* <CounterTwo /> */}
+			{/* <CounterThree /> */}
+
+			 <DataFetchingOne />
+			 <DataFetchingTwo />
+
+
+			{/* useCallback hook  */}
+			 {/* <ParentComponent /> */}
 
 
 			{/* <UserForm /> */}
@@ -87,6 +111,8 @@ function App() {
 			{/* <ParentComponent /> */}
 		</div>
 	)
+
+
 }
 
 // export default App
@@ -94,8 +120,50 @@ function App() {
 
 
 
-// export const UserContext = React.createContext()
-// export const ChannelContext = React.createContext()
+
+
+// for use reducer hook with use context video 22 
+// const initialState = 0
+// const reducer = (state, action) => {
+// 	switch (action) {
+// 		case 'increment':
+// 			return state + 1
+// 		case 'decrement':
+// 			return state - 1
+// 		case 'reset':
+// 			return initialState
+// 		default:
+// 			return state
+// 	}
+// }
+
+
+
+// function App() {
+// 	const [count, dispatch] = useReducer(reducer, initialState)
+// 	return (
+// 		<CountContext.Provider 
+// 			value={ {countState: count, countDispatch: dispatch }}>
+// 			<div className="App">
+// 				Count - {count}
+// 				<ComponentA />
+// 				<ComponentB />
+// 				<ComponentC />
+// 			</div>
+// 		</CountContext.Provider>
+// 	)
+
+// 	}
+
+
+
+
+
+
+
+
+
+
 
 
 // const initialState = 0
