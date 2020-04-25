@@ -15,7 +15,8 @@ function Counter() {
   const isEven = useMemo(() => {
     let i = 0
     while (i < 2000000000) i++
-    return counterOne % 2 === 0
+	return counterOne % 2 === 0
+  //depends on counter one only
   }, [counterOne])
 
 	return (

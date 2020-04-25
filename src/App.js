@@ -96,8 +96,10 @@ export const CountContext = React.createContext()
 
 
 			{/* useCallback hook  */}
-			 <ParentComponent />
+			 {/* <ParentComponent /> */}
 
+			 {/* useMemo hook  */}
+			<Counter />
 
 			{/* <UserForm /> */}
 			{/* <CounterOne />
