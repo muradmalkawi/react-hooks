@@ -91,12 +91,12 @@ export const CountContext = React.createContext()
 			{/* <CounterTwo /> */}
 			{/* <CounterThree /> */}
 
-			 <DataFetchingOne />
-			 <DataFetchingTwo />
+			 {/* <DataFetchingOne />
+			 <DataFetchingTwo /> */}
 
 
 			{/* useCallback hook  */}
-			 {/* <ParentComponent /> */}
+			 <ParentComponent />
 
 
 			{/* <UserForm /> */}

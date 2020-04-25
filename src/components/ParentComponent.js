@@ -9,6 +9,7 @@ function ParentComponent() {
 
 	const incrementAge = useCallback(() => {
 		setAge(age + 1)
+	// second argument is dependency list
 	}, [age])
 
 	const incrementSalary = useCallback(() => {
