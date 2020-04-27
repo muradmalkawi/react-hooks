@@ -111,10 +111,11 @@ export const CountContext = React.createContext()
 			<HookTimer /> */}
 
 			 {/* Custom Hooks  */}
-			<DocTitleOne />
-			<DocTitleTwo />
+			{/* <DocTitleOne /> */}
+			{/* <DocTitleTwo /> */}
 
-
+			<CounterOne />
+			<CounterTwo />
 
 			{/* <UserForm /> */}
 			{/* <CounterOne />
