@@ -12,6 +12,8 @@ function HookTimer() {
       clearInterval(interValRef.current)
     }
   }, [])
+  
+  
   return (
     <div>
       HookTimer - {timer} -

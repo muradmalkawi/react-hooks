@@ -106,17 +106,20 @@ export const CountContext = React.createContext()
 
 
 			{/* useRef Hook  */}
-			<FocusInput />
+			{/* <FocusInput />
 			<CLassTimer />
-			<HookTimer />
+			<HookTimer /> */}
+
+			 {/* Custom Hooks  */}
+			<DocTitleOne />
+			<DocTitleTwo />
 
 
 
 			{/* <UserForm /> */}
 			{/* <CounterOne />
 			<CounterTwo /> */}
-			{/* <DocTitleOne />
-			<DocTitleTwo /> */}
+			
 
 			{/* <HookTimer /> */}
 			{/* <classTimer /> */}
