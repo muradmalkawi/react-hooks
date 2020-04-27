@@ -28,6 +28,7 @@ import DataFetchingTwo from './components/DataFetchingTwo'
 //import ComponentF from './components/ComponentF'
 
 
+
 import ParentComponent from './components/ParentComponent'
 import Counter from './components/Counter'
 import HookTimer from './components/HookTimer'
@@ -38,6 +39,8 @@ import CounterTwo from './components/CounterTwo'
 import UserForm from './components/UserForm'
 import DataFetchingOne from './components/DataFetchingOne'
 
+import FocusInput from './components/FocusInput'
+import CLassTimer from './components/ClassTimer'
 
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
@@ -99,7 +102,15 @@ export const CountContext = React.createContext()
 			 {/* <ParentComponent /> */}
 
 			 {/* useMemo hook  */}
-			<Counter />
+			{/* <Counter /> */}
+
+
+			{/* useRef Hook  */}
+			<FocusInput />
+			<CLassTimer />
+			<HookTimer />
+
+
 
 			{/* <UserForm /> */}
 			{/* <CounterOne />
