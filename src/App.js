@@ -114,10 +114,10 @@ export const CountContext = React.createContext()
 			{/* <DocTitleOne /> */}
 			{/* <DocTitleTwo /> */}
 
-			<CounterOne />
-			<CounterTwo />
+			{/* <CounterOne /> */}
+			{/* <CounterTwo /> */}
 
-			{/* <UserForm /> */}
+			<UserForm />
 			{/* <CounterOne />
 			<CounterTwo /> */}
 			
