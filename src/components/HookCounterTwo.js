@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState } from "react"
 
 function HookCounterTwo() {
 	const initialCount = 0
 	const [count, setCount] = useState(initialCount)
 	const incrementFive = () => {
 		for (let i = 0; i < 5; i++) {
+			//pass function that has access to old value
 			setCount(prevCount => prevCount + 1)
 		}
 	}

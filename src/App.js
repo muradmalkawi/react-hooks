@@ -1,61 +1,53 @@
-import React, { Component, useReducer } from 'react'
-import './App.css'
-import ClassCounter from './components/ClassCounter'
-import HookCounter from './components/HookCounter'
-import HookCounterTwo from './components/HookCounterTwo'
-import HookCounterThree from './components/HookCounterThree'
-import ClassCounterOne from './components/ClassCounterOne'
-import ClassCounterTwo from './components/ClassCounterTwo'
-import HookCounterFour from './components/HookCounterFour'
-import HookCounterOne from './components/HookCounterOne'
-import ClassMouse from './components/ClassMouse'
-import HookMouse from './components/HookMouse'
-import MouseContainer from './components/MouseContainer'
-import IntervalClassCounter from './components/IntervalClassCounter'
-import IntervalHookCounter from './components/IntervalHookCounter'
-import DataFetching from './components/DataFetching'
+import React, { Component, useReducer } from "react"
+import "./App.css"
+import ClassCounter from "./components/ClassCounter"
+import HookCounter from "./components/HookCounter"
+import HookCounterTwo from "./components/HookCounterTwo"
+import HookCounterThree from "./components/HookCounterThree"
+import ClassCounterOne from "./components/ClassCounterOne"
+import ClassCounterTwo from "./components/ClassCounterTwo"
+import HookCounterFour from "./components/HookCounterFour"
+import HookCounterOne from "./components/HookCounterOne"
+import ClassMouse from "./components/ClassMouse"
+import HookMouse from "./components/HookMouse"
+import MouseContainer from "./components/MouseContainer"
+import IntervalClassCounter from "./components/IntervalClassCounter"
+import IntervalHookCounter from "./components/IntervalHookCounter"
+import DataFetching from "./components/DataFetching"
 //import ComponentC from './components/ComponentC'
 
 // import CounterOne from './components/CounterOne'
 // import CounterTwo from './components/CounterTwo'
-import CounterThree from './components/CounterThree'
-import ComponentA from './components/ComponentA'
-import ComponentB from './components/ComponentB'
-import ComponentC from './components/ComponentC'
+import CounterThree from "./components/CounterThree"
+import ComponentA from "./components/ComponentA"
+import ComponentB from "./components/ComponentB"
+import ComponentC from "./components/ComponentC"
 // import DataFetchingOne from './components/DataFetchingOne'
-import DataFetchingTwo from './components/DataFetchingTwo'
+import DataFetchingTwo from "./components/DataFetchingTwo"
 // import ComponentD from './components/ComponentD'
 //import ComponentF from './components/ComponentF'
 
+import ParentComponent from "./components/ParentComponent"
+import Counter from "./components/Counter"
+import HookTimer from "./components/HookTimer"
+import DocTitleOne from "./components/DocTitleOne"
+import DocTitleTwo from "./components/DocTitleTwo"
+import CounterOne from "./components/CounterOne"
+import CounterTwo from "./components/CounterTwo"
+import UserForm from "./components/UserForm"
+import DataFetchingOne from "./components/DataFetchingOne"
 
-
-import ParentComponent from './components/ParentComponent'
-import Counter from './components/Counter'
-import HookTimer from './components/HookTimer'
-import DocTitleOne from './components/DocTitleOne'
-import DocTitleTwo from './components/DocTitleTwo'
-import CounterOne from './components/CounterOne'
-import CounterTwo from './components/CounterTwo'
-import UserForm from './components/UserForm'
-import DataFetchingOne from './components/DataFetchingOne'
-
-import FocusInput from './components/FocusInput'
-import CLassTimer from './components/ClassTimer'
+import FocusInput from "./components/FocusInput"
+import CLassTimer from "./components/ClassTimer"
 
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
 
 export const CountContext = React.createContext()
 
-
-
-
-	function App() {
+function App() {
 	return (
-		<div className="App"> 
-
-
-
+		<div className="App">
 			{/* useState Hook */}
 			{/* <HookCounter /> */}
 			{/* <ClassCounter /> */}
@@ -66,61 +58,54 @@ export const CountContext = React.createContext()
 			{/* <HookCounterThree /> */}
 			{/* <HookCounterFour /> */}
 
-
-
 			{/* useEffect Hook */}
 			{/* <ClassCounterOne /> */}
 			{/* <HookCounterOne /> */}
 			{/* <ClassMouse /> */}
 			{/* <HookMouse /> */}
 			{/* <MouseContainer /> */}
-			{/* <IntervalClassCounter /> */}
-			{/* <IntervalHookCounter /> */}
+			{/* <IntervalClassCounter />
+			<IntervalHookCounter /> */}
 			{/* <DataFetching /> */}
 
 			{/* useContext Hook  */}
 			{/* <ComponentC /> */}
 
- 			{/* <UserContext.Provider value={'Peter Osoo'}>
-         		<ChannelContext.Provider value={'Rateng Inc'}>
- 					<ComponentC />
- 				</ChannelContext.Provider>
- 			</UserContext.Provider>			 */}
-
-
+			<UserContext.Provider value={"Peter Osoo"}>
+				<ChannelContext.Provider value={"Rateng Inc"}>
+					<ComponentC />
+				</ChannelContext.Provider>
+			</UserContext.Provider>
 
 			{/* useReducer Hook  */}
 			{/* <CounterOne /> */}
 			{/* <CounterTwo /> */}
 			{/* <CounterThree /> */}
 
-			 {/* <DataFetchingOne />
+			{/* <DataFetchingOne />
 			 <DataFetchingTwo /> */}
 
-
 			{/* useCallback hook  */}
-			 {/* <ParentComponent /> */}
+			{/* <ParentComponent /> */}
 
-			 {/* useMemo hook  */}
+			{/* useMemo hook  */}
 			{/* <Counter /> */}
-
 
 			{/* useRef Hook  */}
 			{/* <FocusInput />
 			<CLassTimer />
 			<HookTimer /> */}
 
-			 {/* Custom Hooks  */}
+			{/* Custom Hooks  */}
 			{/* <DocTitleOne /> */}
 			{/* <DocTitleTwo /> */}
 
 			{/* <CounterOne /> */}
 			{/* <CounterTwo /> */}
 
-			<UserForm />
+			{/* <UserForm /> */}
 			{/* <CounterOne />
 			<CounterTwo /> */}
-			
 
 			{/* <HookTimer /> */}
 			{/* <classTimer /> */}
@@ -128,18 +113,11 @@ export const CountContext = React.createContext()
 			{/* <ParentComponent /> */}
 		</div>
 	)
-
-
 }
 
 // export default App
 
-
-
-
-
-
-// for use reducer hook with use context video 22 
+// for use reducer hook with use context video 22
 // const initialState = 0
 // const reducer = (state, action) => {
 // 	switch (action) {
@@ -154,12 +132,10 @@ export const CountContext = React.createContext()
 // 	}
 // }
 
-
-
 // function App() {
 // 	const [count, dispatch] = useReducer(reducer, initialState)
 // 	return (
-// 		<CountContext.Provider 
+// 		<CountContext.Provider
 // 			value={ {countState: count, countDispatch: dispatch }}>
 // 			<div className="App">
 // 				Count - {count}
@@ -171,17 +147,6 @@ export const CountContext = React.createContext()
 // 	)
 
 // 	}
-
-
-
-
-
-
-
-
-
-
-
 
 // const initialState = 0
 // const reducer = (state, action) => {
@@ -206,22 +171,37 @@ export const CountContext = React.createContext()
 // 			value={{ countState: count, countDispatch: dispatch }}
 // 		>
 // 			<div className="App">
-				{/* <CounterOne /> */}
-				{/* <CounterTwo /> */}
-				{/* <CounterThree /> */}
-				{/* {count} */}
-				{/* <ComponentA />
+{
+	/* <CounterOne /> */
+}
+{
+	/* <CounterTwo /> */
+}
+{
+	/* <CounterThree /> */
+}
+{
+	/* {count} */
+}
+{
+	/* <ComponentA />
 				<ComponentD />
-				<ComponentF /> */}
-				{/* <ComponentB /> */}
-				{/* <ComponentC /> */}
-				{/* <DataFetchingOne /> */}
+				<ComponentF /> */
+}
+{
+	/* <ComponentB /> */
+}
+{
+	/* <ComponentC /> */
+}
+{
+	/* <DataFetchingOne /> */
+}
 // 				<DataFetchingTwo />
 // 				</div>
 // 		</CountContext.Provider>
 // 	)
 // }
-
 
 // class App extends Component {
 // 	render() {
@@ -233,25 +213,50 @@ export const CountContext = React.createContext()
 // 					</ChannelContext.Provider>
 // 				</UserContext.Provider>
 
+{
+	/* <DataFetching /> */
+}
+{
+	/* <IntervalHookCounter />
+				<IntervalClassCounter /> */
+}
+{
+	/* <MouseContainer /> */
+}
+{
+	/* <HookMouse /> */
+}
+{
+	/* <ClassMouse /> */
+}
+{
+	/* <HookCounterOne /> */
+}
+{
+	/* <ClassCounterOne /> */
+}
 
-
-				{/* <DataFetching /> */}
-				{/* <IntervalHookCounter />
-				<IntervalClassCounter /> */}
-				{/* <MouseContainer /> */}
-				{/* <HookMouse /> */}
-				{/* <ClassMouse /> */}
-				{/* <HookCounterOne /> */}
-				{/* <ClassCounterOne /> */}
-
-
-				{/* useState  */}
-				{/* <ClassCounter /> */}
-				{/* <ClassCounterTwo /> */}
-				{/* <HookCounter /> */}
-				{/* <HookCounterTwo /> */}
-				{/* <HookCounterThree /> */}
-				{/* <HookCounterFour /> */}
+{
+	/* useState  */
+}
+{
+	/* <ClassCounter /> */
+}
+{
+	/* <ClassCounterTwo /> */
+}
+{
+	/* <HookCounter /> */
+}
+{
+	/* <HookCounterTwo /> */
+}
+{
+	/* <HookCounterThree /> */
+}
+{
+	/* <HookCounterFour /> */
+}
 // 			</div>
 // 		)
 // 	}
