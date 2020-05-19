@@ -71,25 +71,25 @@ function App() {
 			{/* useContext Hook  */}
 			{/* <ComponentC /> */}
 
-			<UserContext.Provider value={"Peter Osoo"}>
+			{/* <UserContext.Provider value={"Peter Osoo"}>
 				<ChannelContext.Provider value={"Rateng Inc"}>
 					<ComponentC />
 				</ChannelContext.Provider>
-			</UserContext.Provider>
+			</UserContext.Provider> */}
 
 			{/* useReducer Hook  */}
 			{/* <CounterOne /> */}
 			{/* <CounterTwo /> */}
 			{/* <CounterThree /> */}
 
-			{/* <DataFetchingOne />
-			 <DataFetchingTwo /> */}
+			{/* <DataFetchingOne /> */}
+			{/* <DataFetchingTwo /> */}
 
 			{/* useCallback hook  */}
-			{/* <ParentComponent /> */}
+			<ParentComponent />
 
 			{/* useMemo hook  */}
-			{/* <Counter /> */}
+			<Counter />
 
 			{/* useRef Hook  */}
 			{/* <FocusInput />

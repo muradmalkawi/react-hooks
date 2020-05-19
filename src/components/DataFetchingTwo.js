@@ -1,27 +1,26 @@
-import React, { useReducer, useEffect } from 'react'
-import axios from 'axios'
-
+import React, { useReducer, useEffect } from "react"
+import axios from "axios"
 
 // declare 3 variables as properties of single object
 const initialState = {
 	loading: true,
-	error: '',
-	post: {}
+	error: "",
+	post: {},
 }
 
 const reducer = (state, action) => {
 	switch (action.type) {
-		case 'FETCH_SUCCESS':
+		case "FETCH_SUCCESS":
 			return {
 				loading: false,
 				post: action.payload,
-				error: ''
+				error: "",
 			}
-		case 'FETCH_ERROR':
+		case "FETCH_ERROR":
 			return {
 				loading: false,
 				post: {},
-				error: 'Something went wrong!'
+				error: "Something went wrong!",
 			}
 		default:
 			return state
@@ -33,18 +32,18 @@ function DataFetchingTwo() {
 
 	useEffect(() => {
 		axios
-			.get(`https://jsonplaceholder.typicode.com/posts/24`)
+			.get(`https://jsonplaceholder.typicode.com/posts/2`)
 			.then(response => {
-				dispatch({ type: 'FETCH_SUCCESS', payload: response.data })
+				dispatch({ type: "FETCH_SUCCESS", payload: response.data })
 			})
 			.catch(error => {
-				dispatch({ type: 'FETCH_ERROR' })
+				dispatch({ type: "FETCH_ERROR" })
 			})
 	}, [])
 	return (
 		<div>
 			{/* append state as they part of state */}
-			{state.loading ? 'Loading' : state.post.title}
+			{state.loading ? "Loading" : state.post.title}
 			{state.error ? state.error : null}
 		</div>
 	)

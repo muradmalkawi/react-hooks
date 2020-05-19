@@ -1,7 +1,7 @@
-import React, { useState, useCallback } from 'react'
-import Count from './Count'
-import Button from './Button'
-import Title from './Title'
+import React, { useState, useCallback } from "react"
+import Count from "./Count"
+import Button from "./Button"
+import Title from "./Title"
 
 function ParentComponent() {
 	const [age, setAge] = useState(25)
@@ -9,14 +9,12 @@ function ParentComponent() {
 
 	const incrementAge = useCallback(() => {
 		setAge(age + 1)
-	// second argument is dependency list
-	}, [age])
+	}, [age]) // second argument is dependency list
 
 	const incrementSalary = useCallback(() => {
 		setSalary(salary + 1000)
 	}, [salary])
 
-	
 	return (
 		<div>
 			<Title />
