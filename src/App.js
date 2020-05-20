@@ -39,6 +39,8 @@ import DataFetchingOne from "./components/DataFetchingOne"
 
 import FocusInput from "./components/FocusInput"
 import CLassTimer from "./components/ClassTimer"
+import CounterFour from "./components/CounterFour"
+import CounterFive from "./components/CounterFive"
 
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
@@ -86,22 +88,23 @@ function App() {
 			{/* <DataFetchingTwo /> */}
 
 			{/* useCallback hook  */}
-			<ParentComponent />
+			{/* <ParentComponent /> */}
 
 			{/* useMemo hook  */}
-			<Counter />
+			{/* <Counter /> */}
 
 			{/* useRef Hook  */}
-			{/* <FocusInput />
-			<CLassTimer />
-			<HookTimer /> */}
+			{/* <FocusInput /> */}
+
+			{/* <CLassTimer /> */}
+			{/* <HookTimer /> */}
 
 			{/* Custom Hooks  */}
 			{/* <DocTitleOne /> */}
 			{/* <DocTitleTwo /> */}
 
-			{/* <CounterOne /> */}
-			{/* <CounterTwo /> */}
+			<CounterFour />
+			<CounterFive />
 
 			{/* <UserForm /> */}
 			{/* <CounterOne />
