@@ -47,69 +47,82 @@ export const ChannelContext = React.createContext()
 
 export const CountContext = React.createContext()
 
+// for use reducer hook with use context video 22
+const initialState = 0
+const reducer = (state, action) => {
+	switch (action) {
+		case "increment":
+			return state + 1
+		case "decrement":
+			return state - 1
+		case "reset":
+			return initialState
+		default:
+			return state
+	}
+}
+
 function App() {
+	const [count, dispatch] = useReducer(reducer, initialState)
+
 	return (
 		<div className="App">
+			<CountContext.Provider
+				value={{ countState: count, countDispatch: dispatch }}
+			>
+				<div className="App">
+					Count - {count}
+					<ComponentA />
+					<ComponentB />
+				</div>
+			</CountContext.Provider>
+
 			{/* useState Hook */}
 			{/* <HookCounter />
 			<ClassCounter /> */}
-
 			{/* <HookCounterTwo /> */}
 			{/* <ClassCounterTwo /> */}
-
 			{/* <HookCounterThree /> */}
 			{/* <HookCounterFour /> */}
-
 			{/* useEffect Hook */}
 			{/* <ClassCounterOne /> */}
 			{/* <HookCounterOne /> */}
 			{/* <ClassMouse /> */}
 			{/* <HookMouse /> */}
 			{/* <MouseContainer /> */}
-			<IntervalClassCounter />
-			<IntervalHookCounter />
+			{/* <IntervalClassCounter />
+			<IntervalHookCounter /> */}
 			{/* <DataFetching /> */}
-
 			{/* useContext Hook  */}
 			{/* <ComponentC /> */}
-
-			{/* <UserContext.Provider value={"Peter Osoo"}>
+			{/* 
+			<UserContext.Provider value={"Peter Osoo"}>
 				<ChannelContext.Provider value={"Rateng Inc"}>
 					<ComponentC />
 				</ChannelContext.Provider>
 			</UserContext.Provider> */}
-
 			{/* useReducer Hook  */}
 			{/* <CounterOne /> */}
 			{/* <CounterTwo /> */}
 			{/* <CounterThree /> */}
-
 			{/* <DataFetchingOne /> */}
 			{/* <DataFetchingTwo /> */}
-
 			{/* useCallback hook  */}
 			{/* <ParentComponent /> */}
-
 			{/* useMemo hook  */}
 			{/* <Counter /> */}
-
 			{/* useRef Hook  */}
 			{/* <FocusInput /> */}
-
 			{/* <CLassTimer /> */}
 			{/* <HookTimer /> */}
-
 			{/* Custom Hooks  */}
 			{/* <DocTitleOne /> */}
 			{/* <DocTitleTwo /> */}
-
 			{/* <CounterFour /> */}
 			{/* <CounterFive /> */}
-
 			{/* <UserForm /> */}
 			{/* <CounterOne />
 			<CounterTwo /> */}
-
 			{/* <HookTimer /> */}
 			{/* <classTimer /> */}
 			{/* <Counter /> */}
@@ -119,34 +132,3 @@ function App() {
 }
 
 export default App
-
-// for use reducer hook with use context video 22
-// const initialState = 0
-// const reducer = (state, action) => {
-// 	switch (action) {
-// 		case 'increment':
-// 			return state + 1
-// 		case 'decrement':
-// 			return state - 1
-// 		case 'reset':
-// 			return initialState
-// 		default:
-// 			return state
-// 	}
-// }
-
-// function App() {
-// 	const [count, dispatch] = useReducer(reducer, initialState)
-// 	return (
-// 		<CountContext.Provider
-// 			value={ {countState: count, countDispatch: dispatch }}>
-// 			<div className="App">
-// 				Count - {count}
-// 				<ComponentA />
-// 				<ComponentB />
-// 				<ComponentC />
-// 			</div>
-// 		</CountContext.Provider>
-// 	)
-
-// 	}

@@ -1,5 +1,3 @@
-// for useReducer Hooks
-
 import React, { useReducer } from "react"
 
 const initialState = 0
