@@ -11,7 +11,7 @@ function HookMouse() {
 	}
 
 	useEffect(() => {
-		console.log("useEffect called")
+		console.log("useEffect called...")
 		window.addEventListener("mousemove", logMousePosition)
 
 		// to unmount in a function. Clean up code

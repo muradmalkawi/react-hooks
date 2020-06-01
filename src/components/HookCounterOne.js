@@ -4,6 +4,7 @@ function HookCounterOne() {
 	const [count, setCount] = useState(0)
 	const [name, setName] = useState("")
 
+	//useEffect runs after every render of the component
 	useEffect(() => {
 		console.log("useEffect - Updating document title ")
 		document.title = `You clicked ${count} times`

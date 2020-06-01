@@ -51,8 +51,8 @@ function App() {
 	return (
 		<div className="App">
 			{/* useState Hook */}
-			{/* <HookCounter /> */}
-			{/* <ClassCounter /> */}
+			{/* <HookCounter />
+			<ClassCounter /> */}
 
 			{/* <HookCounterTwo /> */}
 			{/* <ClassCounterTwo /> */}
@@ -66,8 +66,8 @@ function App() {
 			{/* <ClassMouse /> */}
 			{/* <HookMouse /> */}
 			{/* <MouseContainer /> */}
-			{/* <IntervalClassCounter />
-			<IntervalHookCounter /> */}
+			<IntervalClassCounter />
+			<IntervalHookCounter />
 			{/* <DataFetching /> */}
 
 			{/* useContext Hook  */}
@@ -103,8 +103,8 @@ function App() {
 			{/* <DocTitleOne /> */}
 			{/* <DocTitleTwo /> */}
 
-			<CounterFour />
-			<CounterFive />
+			{/* <CounterFour /> */}
+			{/* <CounterFive /> */}
 
 			{/* <UserForm /> */}
 			{/* <CounterOne />
@@ -118,7 +118,7 @@ function App() {
 	)
 }
 
-// export default App
+export default App
 
 // for use reducer hook with use context video 22
 // const initialState = 0
@@ -150,119 +150,3 @@ function App() {
 // 	)
 
 // 	}
-
-// const initialState = 0
-// const reducer = (state, action) => {
-// 	switch (action) {
-// 		case 'increment':
-// 			return state + 1
-// 		case 'decrement':
-// 			return state - 1
-// 		case 'reset':
-// 			return initialState
-// 		default:
-// 			return state
-// 	}
-// }
-
-// export const CountContext = React.createContext()
-
-// function App() {
-// 	const [count, dispatch] = useReducer(reducer, initialState)
-// 	return (
-// 		<CountContext.Provider
-// 			value={{ countState: count, countDispatch: dispatch }}
-// 		>
-// 			<div className="App">
-{
-	/* <CounterOne /> */
-}
-{
-	/* <CounterTwo /> */
-}
-{
-	/* <CounterThree /> */
-}
-{
-	/* {count} */
-}
-{
-	/* <ComponentA />
-				<ComponentD />
-				<ComponentF /> */
-}
-{
-	/* <ComponentB /> */
-}
-{
-	/* <ComponentC /> */
-}
-{
-	/* <DataFetchingOne /> */
-}
-// 				<DataFetchingTwo />
-// 				</div>
-// 		</CountContext.Provider>
-// 	)
-// }
-
-// class App extends Component {
-// 	render() {
-// 		return (
-// 			<div className="App">
-// 				<UserContext.Provider value={'Peter Osoo'}>
-//         			<ChannelContext.Provider value={'Rateng Inc'}>
-// 						<ComponentC />
-// 					</ChannelContext.Provider>
-// 				</UserContext.Provider>
-
-{
-	/* <DataFetching /> */
-}
-{
-	/* <IntervalHookCounter />
-				<IntervalClassCounter /> */
-}
-{
-	/* <MouseContainer /> */
-}
-{
-	/* <HookMouse /> */
-}
-{
-	/* <ClassMouse /> */
-}
-{
-	/* <HookCounterOne /> */
-}
-{
-	/* <ClassCounterOne /> */
-}
-
-{
-	/* useState  */
-}
-{
-	/* <ClassCounter /> */
-}
-{
-	/* <ClassCounterTwo /> */
-}
-{
-	/* <HookCounter /> */
-}
-{
-	/* <HookCounterTwo /> */
-}
-{
-	/* <HookCounterThree /> */
-}
-{
-	/* <HookCounterFour /> */
-}
-// 			</div>
-// 		)
-// 	}
-// }
-
-export default App

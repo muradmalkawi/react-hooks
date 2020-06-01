@@ -1,15 +1,15 @@
-import React, {useState} from 'react'
+import React, { useState } from "react"
 
 function HookCounter() {
+	//array destructuring ES6
+	const [count, setCount] = useState(0)
+	// console.log(count)
 
-  //array destructuring
-  const [count, setCount] = useState(0)
-
-  return (
-    <div>
-      <button onClick={() => setCount(count + 1)}>Count {count}</button>
-    </div>
-  )
+	return (
+		<div>
+			<button onClick={() => setCount(count + 1)}>Count {count}</button>
+		</div>
+	)
 }
 
 export default HookCounter
