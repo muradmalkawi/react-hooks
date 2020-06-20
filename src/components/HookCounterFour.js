@@ -6,6 +6,7 @@ function HookCounterFour() {
 
 	const addItem = () => {
 		setItems([
+			//spread items array and push new object
 			...items,
 			{
 				id: items.length,
@@ -17,6 +18,7 @@ function HookCounterFour() {
 	return (
 		<>
 			<button onClick={addItem}>Add a number</button>
+
 			<ul>
 				{items.map(item => (
 					<li key={item.id}> {item.value}</li>

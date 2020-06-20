@@ -7,7 +7,10 @@ function ComponentE() {
 	const channel = useContext(ChannelContext)
 	return (
 		<div>
-			User is {user} and channel is {channel} (useContext Hook)
+			<h1> useContext Hook</h1>
+			User is {user} and channel is {channel}
+			<hr />
+			<h1> Context Hook - Class Comonents </h1>
 			<ComponentF />
 		</div>
 	)

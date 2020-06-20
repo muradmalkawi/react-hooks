@@ -41,42 +41,20 @@ import FocusInput from "./components/FocusInput"
 import CLassTimer from "./components/ClassTimer"
 import CounterFour from "./components/CounterFour"
 import CounterFive from "./components/CounterFive"
+import CounterState from "./components/CounterState"
+import IntervalExample from "./components/IntervalExample"
+import ReducerContext from "./components/ReducerContext"
+import CounterSix from "./components/CounterSix"
 
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
 
 export const CountContext = React.createContext()
 
-// for use reducer hook with use context video 22
-const initialState = 0
-const reducer = (state, action) => {
-	switch (action) {
-		case "increment":
-			return state + 1
-		case "decrement":
-			return state - 1
-		case "reset":
-			return initialState
-		default:
-			return state
-	}
-}
-
 function App() {
-	const [count, dispatch] = useReducer(reducer, initialState)
-
 	return (
 		<div className="App">
-			<CountContext.Provider
-				value={{ countState: count, countDispatch: dispatch }}
-			>
-				<div className="App">
-					Count - {count}
-					<ComponentA />
-					<ComponentB />
-				</div>
-			</CountContext.Provider>
-
+			{/* <CounterState /> */}
 			{/* useState Hook */}
 			{/* <HookCounter />
 			<ClassCounter /> */}
@@ -84,6 +62,7 @@ function App() {
 			{/* <ClassCounterTwo /> */}
 			{/* <HookCounterThree /> */}
 			{/* <HookCounterFour /> */}
+
 			{/* useEffect Hook */}
 			{/* <ClassCounterOne /> */}
 			{/* <HookCounterOne /> */}
@@ -93,40 +72,49 @@ function App() {
 			{/* <IntervalClassCounter />
 			<IntervalHookCounter /> */}
 			{/* <DataFetching /> */}
+
 			{/* useContext Hook  */}
 			{/* <ComponentC /> */}
-			{/* 
-			<UserContext.Provider value={"Peter Osoo"}>
+
+			{/* <UserContext.Provider value={"Peter Osoo"}>
 				<ChannelContext.Provider value={"Rateng Inc"}>
 					<ComponentC />
 				</ChannelContext.Provider>
 			</UserContext.Provider> */}
+
 			{/* useReducer Hook  */}
 			{/* <CounterOne /> */}
 			{/* <CounterTwo /> */}
 			{/* <CounterThree /> */}
+
+			{/* <ReducerContext /> */}
+
 			{/* <DataFetchingOne /> */}
 			{/* <DataFetchingTwo /> */}
+
 			{/* useCallback hook  */}
 			{/* <ParentComponent /> */}
+
 			{/* useMemo hook  */}
 			{/* <Counter /> */}
+
 			{/* useRef Hook  */}
 			{/* <FocusInput /> */}
-			{/* <CLassTimer /> */}
-			{/* <HookTimer /> */}
+			{/* <CLassTimer />
+			<HookTimer /> */}
+
 			{/* Custom Hooks  */}
-			{/* <DocTitleOne /> */}
-			{/* <DocTitleTwo /> */}
-			{/* <CounterFour /> */}
-			{/* <CounterFive /> */}
+			{/* <DocTitleOne />
+			<DocTitleTwo /> */}
+
+			<CounterFour />
+			<CounterFive />
+			<CounterSix />
+
 			{/* <UserForm /> */}
-			{/* <CounterOne />
-			<CounterTwo /> */}
-			{/* <HookTimer /> */}
-			{/* <classTimer /> */}
-			{/* <Counter /> */}
-			{/* <ParentComponent /> */}
+
+			{/* Examples  */}
+			{/* <IntervalExample /> */}
 		</div>
 	)
 }

@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect } from "react"
 
 function FocusInput() {
 	const inputRef = useRef(null)
@@ -7,7 +7,7 @@ function FocusInput() {
 		inputRef.current.focus()
 	}, [])
 	return (
-		<div>
+		<div style={{ backgroundColor: "lightblue" }}>
 			<input ref={inputRef} type="text" />
 		</div>
 	)

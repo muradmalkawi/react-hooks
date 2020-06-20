@@ -32,7 +32,7 @@ function DataFetchingTwo() {
 
 	useEffect(() => {
 		axios
-			.get(`https://jsonplaceholder.typicode.com/posts/2`)
+			.get(`https://jsonplaceholder.typicode.com/posts/9`)
 			.then(response => {
 				dispatch({ type: "FETCH_SUCCESS", payload: response.data })
 			})
@@ -42,7 +42,7 @@ function DataFetchingTwo() {
 	}, [])
 	return (
 		<div>
-			{/* append state as they part of state */}
+			{/* append state as they part of state object */}
 			{state.loading ? "Loading" : state.post.title}
 			{state.error ? state.error : null}
 		</div>

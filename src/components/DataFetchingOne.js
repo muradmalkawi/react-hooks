@@ -9,7 +9,7 @@ function DataFetchingOne() {
 
 	useEffect(() => {
 		axios
-			.get(`https://jsonplaceholder.typicode.com/posts/96`)
+			.get(`https://jsonplaceholder.typicode.com/posts/6`)
 			.then(response => {
 				setLoading(false)
 				setPost(response.data)
@@ -21,7 +21,7 @@ function DataFetchingOne() {
 				setError("Something went wrong!")
 			})
 	}, [])
-	// empty dependency array to ensure it is called once
+	// empty dependency array to ensure it is called once ie ComponentDidMount behavior
 
 	return (
 		<div>
