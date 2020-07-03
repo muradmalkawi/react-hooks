@@ -87,7 +87,7 @@ function App() {
 			{/* <CounterTwo /> */}
 			{/* <CounterThree /> */}
 
-			{/* <ReducerContext /> */}
+			<ReducerContext />
 
 			{/* <DataFetchingOne /> */}
 			{/* <DataFetchingTwo /> */}
@@ -107,9 +107,9 @@ function App() {
 			{/* <DocTitleOne />
 			<DocTitleTwo /> */}
 
-			<CounterFour />
+			{/* <CounterFour />
 			<CounterFive />
-			<CounterSix />
+			<CounterSix /> */}
 
 			{/* <UserForm /> */}
 
