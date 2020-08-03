@@ -55,13 +55,14 @@ function App() {
 	return (
 		<div className="App">
 			{/* <CounterState /> */}
+
 			{/* useState Hook */}
-			{/* <HookCounter />
-			<ClassCounter /> */}
-			{/* <HookCounterTwo /> */}
-			{/* <ClassCounterTwo /> */}
-			{/* <HookCounterThree /> */}
-			{/* <HookCounterFour /> */}
+			<HookCounter />
+			<ClassCounter />
+			<HookCounterTwo />
+			<ClassCounterTwo />
+			<HookCounterThree />
+			<HookCounterFour />
 
 			{/* useEffect Hook */}
 			{/* <ClassCounterOne /> */}
@@ -72,47 +73,38 @@ function App() {
 			{/* <IntervalClassCounter />
 			<IntervalHookCounter /> */}
 			{/* <DataFetching /> */}
-
 			{/* useContext Hook  */}
 			{/* <ComponentC /> */}
-
 			{/* <UserContext.Provider value={"Peter Osoo"}>
 				<ChannelContext.Provider value={"Rateng Inc"}>
 					<ComponentC />
 				</ChannelContext.Provider>
 			</UserContext.Provider> */}
-
 			{/* useReducer Hook  */}
 			{/* <CounterOne /> */}
 			{/* <CounterTwo /> */}
 			{/* <CounterThree /> */}
 
-			<ReducerContext />
+			{/* Use Reducer with use Context */}
+			{/* <ReducerContext /> */}
 
 			{/* <DataFetchingOne /> */}
 			{/* <DataFetchingTwo /> */}
-
 			{/* useCallback hook  */}
 			{/* <ParentComponent /> */}
-
 			{/* useMemo hook  */}
 			{/* <Counter /> */}
-
 			{/* useRef Hook  */}
 			{/* <FocusInput /> */}
 			{/* <CLassTimer />
 			<HookTimer /> */}
-
 			{/* Custom Hooks  */}
 			{/* <DocTitleOne />
 			<DocTitleTwo /> */}
-
 			{/* <CounterFour />
 			<CounterFive />
 			<CounterSix /> */}
-
 			{/* <UserForm /> */}
-
 			{/* Examples  */}
 			{/* <IntervalExample /> */}
 		</div>

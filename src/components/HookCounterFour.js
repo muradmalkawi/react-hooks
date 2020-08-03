@@ -17,6 +17,7 @@ function HookCounterFour() {
 
 	return (
 		<>
+			<h1> useState with array</h1>
 			<button onClick={addItem}>Add a number</button>
 
 			<ul>
@@ -24,8 +25,10 @@ function HookCounterFour() {
 					<li key={item.id}> {item.value}</li>
 				))}
 			</ul>
+			<div className="space"></div>
 		</>
 	)
 }
 
+//setter function doesnt automatically append item to end of list
 export default HookCounterFour

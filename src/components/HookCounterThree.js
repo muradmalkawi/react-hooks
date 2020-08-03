@@ -4,6 +4,7 @@ function HookCounterThree() {
 	const [name, setName] = useState({ firstName: "", lastName: "" })
 	return (
 		<form>
+			<h1>useState with object</h1>
 			<input
 				type="text"
 				value={name.firstName}
@@ -21,4 +22,5 @@ function HookCounterThree() {
 	)
 }
 
+//setter function does not automatically merge & update objects
 export default HookCounterThree

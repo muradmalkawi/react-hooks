@@ -7,6 +7,7 @@ function HookCounter() {
 
 	return (
 		<div>
+			<h1>useState Hook</h1>
 			<button onClick={() => setCount(count + 1)}>Count {count}</button>
 		</div>
 	)
