@@ -1,9 +1,11 @@
 import React from "react"
-import { UserContext, ChannelContext } from "../App"
+import { UserContext, ChannelContext } from "./Context"
 
-function ComponentF() {
+const ComponentF = () => {
 	return (
 		<div>
+			<h1> Context - old method</h1>
+			<p>Has so much of nesting</p>
 			<UserContext.Consumer>
 				{user => {
 					return (

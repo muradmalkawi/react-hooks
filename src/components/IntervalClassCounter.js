@@ -22,7 +22,7 @@ class IntervalClassCounter extends Component {
 		})
 	}
 	render() {
-		return <h1>{this.state.count}</h1>
+		return <h2>{this.state.count}</h2>
 	}
 }
 

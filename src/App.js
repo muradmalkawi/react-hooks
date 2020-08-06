@@ -14,18 +14,12 @@ import MouseContainer from "./components/MouseContainer"
 import IntervalClassCounter from "./components/IntervalClassCounter"
 import IntervalHookCounter from "./components/IntervalHookCounter"
 import DataFetching from "./components/DataFetching"
-//import ComponentC from './components/ComponentC'
 
-// import CounterOne from './components/CounterOne'
-// import CounterTwo from './components/CounterTwo'
 import CounterThree from "./components/CounterThree"
 import ComponentA from "./components/ComponentA"
 import ComponentB from "./components/ComponentB"
 import ComponentC from "./components/ComponentC"
-// import DataFetchingOne from './components/DataFetchingOne'
 import DataFetchingTwo from "./components/DataFetchingTwo"
-// import ComponentD from './components/ComponentD'
-//import ComponentF from './components/ComponentF'
 
 import ParentComponent from "./components/ParentComponent"
 import Counter from "./components/Counter"
@@ -45,41 +39,37 @@ import CounterState from "./components/CounterState"
 import IntervalExample from "./components/IntervalExample"
 import ReducerContext from "./components/ReducerContext"
 import CounterSix from "./components/CounterSix"
-
-export const UserContext = React.createContext()
-export const ChannelContext = React.createContext()
+import Context from "./components/Context"
 
 export const CountContext = React.createContext()
 
-function App() {
+const App = () => {
 	return (
 		<div className="App">
 			{/* <CounterState /> */}
 
 			{/* useState Hook */}
-			<HookCounter />
+			{/* <HookCounter />
 			<ClassCounter />
 			<HookCounterTwo />
 			<ClassCounterTwo />
 			<HookCounterThree />
-			<HookCounterFour />
+			<HookCounterFour /> */}
 
 			{/* useEffect Hook */}
-			{/* <ClassCounterOne /> */}
-			{/* <HookCounterOne /> */}
-			{/* <ClassMouse /> */}
-			{/* <HookMouse /> */}
+			{/* <ClassCounterOne />
+			<HookCounterOne /> */}
+			{/* <ClassMouse />
+			<HookMouse /> */}
 			{/* <MouseContainer /> */}
-			{/* <IntervalClassCounter />
-			<IntervalHookCounter /> */}
+			<IntervalClassCounter />
+			<IntervalHookCounter />
 			{/* <DataFetching /> */}
+
 			{/* useContext Hook  */}
-			{/* <ComponentC /> */}
-			{/* <UserContext.Provider value={"Peter Osoo"}>
-				<ChannelContext.Provider value={"Rateng Inc"}>
-					<ComponentC />
-				</ChannelContext.Provider>
-			</UserContext.Provider> */}
+
+			<Context />
+
 			{/* useReducer Hook  */}
 			{/* <CounterOne /> */}
 			{/* <CounterTwo /> */}

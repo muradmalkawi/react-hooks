@@ -15,6 +15,7 @@ function HookMouse() {
 		window.addEventListener("mousemove", logMousePosition)
 
 		// to unmount pass in a function. Clean up code
+		// cleanup code can be cancelling subscriptions, timers, removing event handlers
 		return () => {
 			console.log("Component unmounting code")
 			window.removeEventListener("mousemove", logMousePosition)
@@ -29,3 +30,7 @@ function HookMouse() {
 }
 
 export default HookMouse
+
+// 9 - Run effects only once ---> call useeffet only on initial render
+
+// 10 - useEffect with cleanup --> Component Will Unmount functionality

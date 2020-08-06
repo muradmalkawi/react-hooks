@@ -22,3 +22,7 @@ function HookCounterOne() {
 }
 
 export default HookCounterOne
+
+// 8 - Conditionally run effects
+// specify props or state to watch for as second param
+// effect dont runif no change
