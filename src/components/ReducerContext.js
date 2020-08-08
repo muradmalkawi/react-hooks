@@ -1,7 +1,9 @@
 import React, { useReducer } from "react"
-import ComponentI from "./reducerContext/ComponentI"
-import ComponentH from "./reducerContext/ComponentH"
-import ComponentG from "./reducerContext/ComponentG"
+import ComponentC from "./reducerContext/ComponentC"
+import ComponentB from "./reducerContext/ComponentB"
+import ComponentA from "./reducerContext/ComponentA"
+
+export const CountContext = React.createContext()
 
 const initialState = 0
 const reducer = (state, action) => {
@@ -17,9 +19,7 @@ const reducer = (state, action) => {
 	}
 }
 
-export const CountContext = React.createContext()
-
-function ReducerContext() {
+const ReducerContext = () => {
 	const [count, dispatch] = useReducer(reducer, initialState)
 	return (
 		<CountContext.Provider
@@ -29,9 +29,9 @@ function ReducerContext() {
 				<h1> Use Reducer with use Context </h1>
 				<p> Global state management </p>
 				Count - {count}
-				<ComponentG />
-				<ComponentH />
-				<ComponentI />
+				<ComponentA />
+				<ComponentB />
+				<ComponentC />
 			</div>
 		</CountContext.Provider>
 	)

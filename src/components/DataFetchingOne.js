@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import axios from "axios"
 
-function DataFetchingOne() {
+const DataFetchingOne = () => {
 	//need three state variables
 	const [loading, setLoading] = useState(true)
 	const [error, setError] = useState("")
@@ -9,7 +9,7 @@ function DataFetchingOne() {
 
 	useEffect(() => {
 		axios
-			.get(`https://jsonplaceholder.typicode.com/posts/6`)
+			.get(`https://jsonplaceholder.typicode.com/posts/54`)
 			.then(response => {
 				setLoading(false)
 				setPost(response.data)

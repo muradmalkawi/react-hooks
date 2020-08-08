@@ -1,4 +1,4 @@
-import React, { Component, useReducer } from "react"
+import React, { Component } from "react"
 import "./App.css"
 import ClassCounter from "./components/ClassCounter"
 import HookCounter from "./components/HookCounter"
@@ -62,24 +62,25 @@ const App = () => {
 			{/* <ClassMouse />
 			<HookMouse /> */}
 			{/* <MouseContainer /> */}
-			<IntervalClassCounter />
-			<IntervalHookCounter />
+			{/* <IntervalClassCounter />
+			<IntervalHookCounter /> */}
 			{/* <DataFetching /> */}
 
 			{/* useContext Hook  */}
 
-			<Context />
+			{/* <Context /> */}
 
 			{/* useReducer Hook  */}
-			{/* <CounterOne /> */}
-			{/* <CounterTwo /> */}
-			{/* <CounterThree /> */}
+			<CounterOne />
+			<CounterTwo />
+			<CounterThree />
 
 			{/* Use Reducer with use Context */}
-			{/* <ReducerContext /> */}
+			<ReducerContext />
 
-			{/* <DataFetchingOne /> */}
-			{/* <DataFetchingTwo /> */}
+			<DataFetchingOne />
+			<DataFetchingTwo />
+
 			{/* useCallback hook  */}
 			{/* <ParentComponent /> */}
 			{/* useMemo hook  */}

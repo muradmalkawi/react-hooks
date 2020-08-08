@@ -22,6 +22,7 @@ function CounterOne() {
 	return (
 		<>
 			<div>
+				<h2>useReducer (Simple state & action)</h2>
 				<div>Count = {count}</div>
 				<button onClick={() => dispatch("increment")}>Increment</button>
 				<button onClick={() => dispatch("decrement")}>Decrement</button>

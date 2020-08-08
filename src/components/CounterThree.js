@@ -1,13 +1,13 @@
-import React, { useReducer } from 'react'
+import React, { useReducer } from "react"
 
 const initialState = 0
 const reducer = (state, action) => {
 	switch (action) {
-		case 'increment':
+		case "increment":
 			return state + 1
-		case 'decrement':
+		case "decrement":
 			return state - 1
-		case 'reset':
+		case "reset":
 			return initialState
 		default:
 			return state
@@ -20,15 +20,16 @@ function CounterThree() {
 
 	return (
 		<div>
+			<h2>Multiple useReducers</h2>
 			<div>Count = {count}</div>
-			<button onClick={() => dispatch('increment')}>Increment</button>
-			<button onClick={() => dispatch('decrement')}>Decrement</button>
-			<button onClick={() => dispatch('reset')}>Reset</button>
+			<button onClick={() => dispatch("increment")}>Increment</button>
+			<button onClick={() => dispatch("decrement")}>Decrement</button>
+			<button onClick={() => dispatch("reset")}>Reset</button>
 
 			<div>Count = {countTwo}</div>
-			<button onClick={() => dispatchTwo('increment')}>Increment</button>
-			<button onClick={() => dispatchTwo('decrement')}>Decrement</button>
-			<button onClick={() => dispatchTwo('reset')}>Reset</button>
+			<button onClick={() => dispatchTwo("increment")}>Increment</button>
+			<button onClick={() => dispatchTwo("decrement")}>Decrement</button>
+			<button onClick={() => dispatchTwo("reset")}>Reset</button>
 		</div>
 	)
 }

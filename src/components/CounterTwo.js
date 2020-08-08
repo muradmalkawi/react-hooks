@@ -27,6 +27,7 @@ function CounterTwo() {
 
 	return (
 		<div>
+			<h2>useReducer (complex state & action)</h2>
 			<div>First Counter = {count.firstCounter}</div>
 			<button onClick={() => dispatch({ type: "increment", value: 1 })}>
 				Increment

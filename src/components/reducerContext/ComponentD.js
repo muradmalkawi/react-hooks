@@ -1,11 +1,11 @@
 import React, { useContext } from "react"
 import { CountContext } from "../ReducerContext"
 
-function ComponentL() {
+function ComponentD() {
 	const countContext = useContext(CountContext)
 	return (
 		<div>
-			Component L - {countContext.countState}
+			Component D - {countContext.countState}
 			<button onClick={() => countContext.countDispatch("increment")}>
 				Increment
 			</button>
@@ -13,8 +13,10 @@ function ComponentL() {
 				Decrement
 			</button>
 			<button onClick={() => countContext.countDispatch("reset")}>Reset</button>
+			<br />
+			<br />
 		</div>
 	)
 }
 
-export default ComponentL
+export default ComponentD
