@@ -1,10 +1,10 @@
 import React, { useState } from "react"
 
 function CounterState() {
-	const [count, setcount] = useState(0)
+	const [count, setCount] = useState(0)
 	return (
 		<div>
-			<button onClick={() => setcount(count + 1)}> Count - {count} </button>
+			<button onClick={() => setCount(count + 1)}> Count - {count} </button>
 		</div>
 	)
 }
