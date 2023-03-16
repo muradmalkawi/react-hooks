@@ -46,15 +46,15 @@ export const CountContext = React.createContext()
 const App = () => {
 	return (
 		<div className="App">
-			{/* <CounterState /> */}
+			<CounterState />
 
 			{/* useState Hook */}
-			{/* <HookCounter />
+			<HookCounter />
 			<ClassCounter />
 			<HookCounterTwo />
 			<ClassCounterTwo />
 			<HookCounterThree />
-			<HookCounterFour /> */}
+			<HookCounterFour />
 
 			{/* useEffect Hook */}
 			{/* <ClassCounterOne />
@@ -71,15 +71,15 @@ const App = () => {
 			{/* <Context /> */}
 
 			{/* useReducer Hook  */}
-			<CounterOne />
+			{/* <CounterOne />
 			<CounterTwo />
-			<CounterThree />
+			<CounterThree /> */}
 
 			{/* Use Reducer with use Context */}
-			<ReducerContext />
+			{/* <ReducerContext />
 
 			<DataFetchingOne />
-			<DataFetchingTwo />
+			<DataFetchingTwo /> */}
 
 			{/* useCallback hook  */}
 			{/* <ParentComponent /> */}
